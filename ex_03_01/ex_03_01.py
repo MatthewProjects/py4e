@@ -3,14 +3,17 @@ str_hours = input('Enter Hours: ')
 str_rate = input('Enter Rate: ')
 
 # Convert input values to float
-xp = float(str_hours) * float(str_rate)
+hours = float(str_hours)
+rate = float(str_rate)
 
 # Calculate gross pay with overtime
-if float(str_hours) > 40:
-    overtime_hours = float(str_hours) - 40
-    overtime_pay = overtime_hours * (float(str_rate) * 1.5)
-    regular_pay = 40 * float(str_rate)
+if hours > 40:
+    overtime_hours = hours - 40
+    overtime_pay = overtime_hours * (rate * 1.5)
+    regular_pay = 40 * rate
     xp = regular_pay + overtime_pay
+else:
+    xp = hours * rate
 
 # Print the total pay
 print('Pay:', xp)
