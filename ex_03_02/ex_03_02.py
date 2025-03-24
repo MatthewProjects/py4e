@@ -6,7 +6,7 @@ try:
     # Convert input values to float
     hours_worked = float(str_hours)
     hourly_rate = float(str_rate)
-except:
+except ValueError:
     print("Error, Please enter numeric input")
     quit()
 
