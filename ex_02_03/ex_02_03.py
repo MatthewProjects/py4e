@@ -1,6 +1,6 @@
-ahours = input('Enter Hours: ')
-arate = input('Enter Rate: ')
-xp = float(ahours) * float(arate)
+xhours = input('Enter Hours: ')
+xrate = input('Enter Rate: ')
+xp = float(xhours) * float(xrate)
 print('Pay:', xp)
 # Output:
 # Enter Hours: 35
